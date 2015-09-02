@@ -24,6 +24,7 @@ THE SOFTWARE.
 
 EventLog = require('resin-event-log')
 resin = require('resin-sdk')
+token = require('resin-token')
 
 ###*
 # @summary Get event logger instance
@@ -42,12 +43,12 @@ resin = require('resin-sdk')
 # 	instance.user.login()
 ###
 exports.getInstance = ->
-	resin.models.config.getMixpanelToken().then (token) ->
-		return EventLog token, 'CLI',
+	resin.models.config.getMixpanelToken().then (mixpanelToken) ->
+		return EventLog mixpanelToken, 'CLI',
 
 			beforeCreate: (type, jsonData, applicationId, deviceId, callback) ->
-				resin.auth.getUserId().then (userId) =>
-					@start(userId, callback)
+				token.getData().then (user) =>
+					@start(user, callback)
 				.catch(callback)
 
 			afterCreate: (type) ->
