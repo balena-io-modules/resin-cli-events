@@ -22,13 +22,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  */
-var EventLog, resin, token;
+var EventLog, resin, token, _;
 
 EventLog = require('resin-event-log');
 
 resin = require('resin-sdk');
 
 token = require('resin-token');
+
+_ = require('lodash');
 
 
 /**
@@ -48,7 +50,7 @@ token = require('resin-token');
  * 	instance.user.login()
  */
 
-exports.getInstance = function() {
+exports.getInstance = _.memoize(function() {
   return resin.models.config.getMixpanelToken().then(function(mixpanelToken) {
     return EventLog(mixpanelToken, 'CLI', {
       beforeCreate: function(type, jsonData, applicationId, deviceId, callback) {
@@ -65,4 +67,4 @@ exports.getInstance = function() {
       }
     });
   });
-};
+});
