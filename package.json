@@ -38,7 +38,7 @@
     "bluebird": "^2.9.34",
     "lodash": "^3.10.1",
     "resin-event-log": "0.0.6",
-    "resin-sdk": "^2.7.0",
+    "resin-sdk": "^4.0.0",
     "resin-token": "^2.4.1"
   }
 }
