@@ -1,6 +1,6 @@
 {
   "name": "resin-cli-events",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Resin.io CLI event client",
   "main": "build/events.js",
   "homepage": "https://github.com/resin-io/resin-cli-events",
