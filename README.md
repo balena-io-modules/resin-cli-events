@@ -4,6 +4,7 @@ resin-cli-events
 [![npm version](https://badge.fury.io/js/resin-cli-events.svg)](http://badge.fury.io/js/resin-cli-events)
 [![dependencies](https://david-dm.org/resin-io/resin-cli-events.png)](https://david-dm.org/resin-io/resin-cli-events.png)
 [![Build Status](https://travis-ci.org/resin-io/resin-cli-events.svg?branch=master)](https://travis-ci.org/resin-io/resin-cli-events)
+[![Build status](https://ci.appveyor.com/api/projects/status/0txhcryylwxqq4e7?svg=true)](https://ci.appveyor.com/project/resin-io/resin-cli-events)
 
 Resin.io CLI event client.
 
@@ -75,4 +76,4 @@ $ gulp lint
 License
 -------
 
-The project is licensed under the MIT license.
+The project is licensed under the Apache 2.0 license.
