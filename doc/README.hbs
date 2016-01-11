@@ -6,6 +6,8 @@ resin-cli-events
 [![Build Status](https://travis-ci.org/resin-io/resin-cli-events.svg?branch=master)](https://travis-ci.org/resin-io/resin-cli-events)
 [![Build status](https://ci.appveyor.com/api/projects/status/0txhcryylwxqq4e7?svg=true)](https://ci.appveyor.com/project/resin-io/resin-cli-events)
 
+Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
+
 Resin.io CLI event client.
 
 Role
