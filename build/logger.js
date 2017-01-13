@@ -18,7 +18,7 @@ var EventLog, resin, token, _;
 
 EventLog = require('resin-event-log');
 
-resin = require('resin-sdk');
+resin = require('resin-sdk-preconfigured');
 
 token = require('resin-token');
 

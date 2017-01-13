@@ -1,7 +1,7 @@
 m = require('mochainon')
 _ = require('lodash')
 Promise = require('bluebird')
-resin = require('resin-sdk')
+resin = require('resin-sdk-preconfigured')
 logger = require('../lib/logger')
 
 describe 'Logger:', ->
