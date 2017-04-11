@@ -1,3 +1,9 @@
+---
+
+# resin-cli-events is deprecated, and no longer in use. You might be looking for [resin-analytics](https://github.com/resin-io-modules/resin-analytics).
+
+---
+
 resin-cli-events
 ----------------
 
